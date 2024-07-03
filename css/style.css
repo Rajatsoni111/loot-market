@@ -1,0 +1,486 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* 
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.5);
+    opacity: .9;
+} */
+
+/* .logo {
+    height: 4rem;
+    padding: 0;
+    margin-right: .8rem;
+} */
+
+/* .brand-title { */
+/* font-family: 'Paytone One', sans-serif; */
+/* font-family: 'Quantico', sans-serif; */
+/* font-family: 'Tilt Prism'; */
+/* font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem; */
+/* font-size: 48px; */
+/* } */
+
+/* .deals {
+    font-weight: normal;
+    margin-left: -.5rem;
+} */
+
+/* for the section which contains data */
+.data-section {
+    padding: 1rem;
+}
+
+/* Carousel */
+.carousel-img {
+    width: 100%;
+    height: 20rem;
+}
+
+.select-dropdown {
+    /* display: block; */
+    padding: 1rem;
+}
+
+/* Heading */
+.heading {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: 'Exo', sans-serif;
+    /* font-family: 'Paytone One'; */
+    /* font-weight: bold; */
+}
+
+#select {
+    /* background-color: ; */
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 0 .5rem;
+}
+
+.bar {
+    height: 5px;
+    background-color: #6528F7;
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+
+/* temporarily removed */
+/* .heading-btn {
+    position: absolute;
+    right: 0;
+    /* bottom: 0; 
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    text-decoration: none; 
+} */
+
+
+/* GOTO Top button */
+.to-top {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: black;
+    right: 0.3%;
+    bottom: 3%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.2rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 3%;
+    z-index: 1;
+}
+
+
+/* If there isn't any results found for the given query */
+.no-results {
+    opacity: 0;
+    width: 100%;
+    height: 50vh;
+    display: none;
+}
+
+.no-results .no-heading {
+    color: grey;
+    font-size: 4rem;
+}
+
+.no-results.show {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Data column starts from here */
+.data-column {
+    text-align: center;
+    justify-content: center;
+    padding: 0 .5vw;
+    margin-bottom: 2vh;
+}
+
+/* new card  */
+.post-card {
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-height: 16rem;
+    transition: background-color .5s;
+}
+
+.post-card a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.post-card:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 100%;
+    height: 52%;
+    object-fit: contain;
+}
+
+.lazy {
+    /* height: 12rem; */
+    /* width: 7rem; */
+    /* object-fit: scale-down; */
+    width: 100%;
+    height: 52%;
+    object-fit: contain;
+}
+
+.body-card {
+    padding: 0;
+    /* padding-bottom: 0; */
+    vertical-align: center;
+    /* margin-top: 0; */
+    height: 48%;
+}
+
+
+.title {
+    padding: 5px;
+    height: 55%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 0;
+    font-size: .8em;
+}
+
+
+.price {
+    font-weight: bold;
+    margin: 0;
+    height: 23%;
+}
+
+hr {
+    /* margin: 0.5vh 0; */
+    margin: 0;
+}
+
+.buyNow {
+    width: 100%;
+    /* height: 20%; */
+    /* padding: .5rem; */
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px 5px 0 0;
+    transition: background-color .3s ease-in-out;
+}
+
+.buyNow:hover {
+    box-shadow: none;
+    background-color: #272829;
+    color: white;
+}
+
+.load-more {
+    padding: .3rem .5rem;
+    border: 1px solid black;
+    background-color: #6528F7;
+    color: white;
+    border-radius: .4rem;
+    display: block;
+    margin: 2rem auto;
+    transition: background-color .3s;
+}
+
+.load-more:hover {
+    /* color: black; */
+    background-color: #A076F9;
+}
+
+
+/* Bottom section */
+.bottom-logo {
+    height: 6rem;
+    padding: 0;
+    margin-right: .8rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    /* color: #ffffff; */
+    text-decoration: none !important;
+    transition: color .3s;
+    color: grey;
+}
+
+.bottom-a:hover {
+    text-decoration: underline !important;
+    color: black;
+    /* background-color: black; */
+}
+
+.red {
+    color: grey;
+}
+
+.bottom-info {
+    background-color: #D8D9DA;
+    padding: 3rem 5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.bottom-para {
+    padding: 0 7vw;
+}
+
+.blue-back {
+    font-weight: bold;
+    /* font-style: underline; */
+    /* background-color: white; */
+    /* margin: 0 2rem; */
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.bottom-text {
+    color: black;
+}
+
+.bottom-nav {
+    text-align: left !important;
+    justify-content: left !important;
+    /* background-color: #272829; */
+    padding: 1rem 0 0 0;
+}
+
+.bottom-nav-col {
+    text-align: left !important;
+    justify-content: left !important;
+}
+
+.bottom-h {
+    margin-left: 2rem;
+    /* font-weight: bold; */
+}
+
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.f-p {
+    color: grey;
+}
+
+/* Temporarily removed */
+/* .show-more {
+    text-align: center;
+    justify-content: center;
+} */
+
+/* .hotdeals{
+    position: absolute;
+    right: 0;
+    justify-content: right;
+    
+} */
+/* .grid-container{
+    display: inline-block;
+    width: 7rem;
+}
+
+
+*/
+
+.loading {
+    display: none;
+}
+
+.loading:nth-child(1) {
+    display: block;
+}
+
+.loading:nth-child(2) {
+    display: block;
+}
+
+.loading:nth-child(3) {
+    display: block;
+}
+
+.loading:nth-child(4) {
+    display: block;
+}
+
+.loading:nth-child(5) {
+    display: block;
+}
+
+.loading:nth-child(6) {
+    display: block;
+}
+
+.loading:nth-child(7) {
+    display: block;
+}
+
+.loading:nth-child(8) {
+    display: block;
+}
+
+.loading:nth-child(9) {
+    display: block;
+}
+
+.loading:nth-child(10) {
+    display: block;
+}
+
+.loading:nth-child(11) {
+    display: block;
+}
+
+.loading:nth-child(12) {
+    display: block;
+}
+
+/* .loading:nth-child(13) {
+    display: block;
+}
+.loading:nth-child(14) {
+    display: block;
+}
+.loading:nth-child(15) {
+    display: block;
+}
+.loading:nth-child(16) {
+    display: block;
+}
+.loading:nth-child(17) {
+    display: block;
+}
+.loading:nth-child(18) {
+    display: block;
+}
+.loading:nth-child(19) {
+    display: block;
+}
+.loading:nth-child(20) {
+    display: block;
+} */
+
+.nav-link {
+    margin: auto .7rem;
+    padding: 12px 8px 4px 8px;
+    /* align-items: end; */
+}
+
+.navbar-nav {
+    margin-left: 1rem;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 990px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bottom-logo {
+        height: 5rem;
+    }
+
+    .bottom-info {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .bottom-para {
+        padding: 0 4vw;
+    }
+
+    .blue-back {
+        padding: .7rem;
+    }
+
+    .bottom-nav {
+        padding: 1rem 0 0 0;
+    }
+
+    .bottom-h {
+        margin-left: 1rem;
+    }
+
+
+    .footer {
+        padding: .7rem;
+    }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actions of the get method</title>
+
+    <!-- <link rel="stylesheet" href="../css/sty.css"> -->
+    <style>
+        /* .carOptions {
+            display: none;
+        } */
+
+
+        * {
+            font-family: 'Borel', cursive;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            /* background: linear-gradient(45deg, #5C4B99, #35155D); */
+            background: linear-gradient(45deg, #2B2730, #080202);
+        }
+
+        .input-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            /* height: 100%; */
+        }
+
+        .data {
+            width: 80vw;
+            background: white;
+            border-radius: .5rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            /* box-shadow: 10px 10px rgba(0, 0, 0, 0.5); */
+            box-shadow: 10px 10px #B2B2B2;
+
+        }
+
+
+
+        /* .heading { */
+        /* margin-left: 1rem; */
+        /* width: 80vw; */
+        /* } */
+
+        /* .form-data {} */
+        
+        .form-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-btn {
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            /* width: 80vw; */
+            color: #080202;
+            font-weight: 900;
+            font-size: 1.5rem;
+            /* margin: 1rem 0; */
+            font-size: 1.8rem;
+            display: flex;
+            align-items: block;
+            margin: 1rem auto;
+            /* text-align: left; */
+            /* font-family: roboto; */
+        }
+
+        form {
+            width: 80vw;
+            border-radius: .5rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            /* box-shadow: 10px 10px rgba(0, 0, 0, 0.5); */
+        }
+
+        .input {
+            /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); */
+            width: 90%;
+            padding: .5rem;
+            margin: .3rem;
+            /* font-weight: bold; */
+            transition: .2s;
+            /* border: 1px solid; */
+
+        }
+
+        .input:focus {
+            /* margin: 0; */
+            /* box-shadow: none; */
+            /* box-shadow: 5px 5px 5px #5C4B99; */
+            /* box-shadow: 0px 0px 3px 3px #9F91CC; */
+            box-shadow: 0px 0px 3px 3px #ccc;
+            outline: none;
+            border: none;
+            /* outline: #5C4B99; */
+        }
+
+        .input::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #ccc;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        .input:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #ccc;
+        }
+
+        .input::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #ccc;
+        }
+
+        #btn {
+            /* border-radius: 10%; */
+            padding: .7rem;
+            width: 10rem;
+            /* #9F91CC; */
+            border-radius: 1rem;
+            border: #35155D;
+            /* background: linear-gradient(#9F91CC, #5C4B99); */
+            background: linear-gradient(45deg, #3C4048, #2B2730);
+            /* background-color: #5C4B99; */
+            color: white;
+            margin: 1rem auto;
+            transition: .3s ease-in-out;
+        }
+
+        #btn:hover {
+            border: #5C4B99;
+            /* background-color: #35155D; */
+            color: #EDE4FF;
+            /* transition: width ease-in-out .2s; */
+            width: 11rem;
+            /* height: 2.5rem; */
+            font-size: 16px;
+        }
+
+
+        @media only screen and (min-width: 820px) {
+
+            /* .form-inner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            } */
+
+            /* .heading { */
+                /* margin: .5rem; */
+                /* display: flex;
+                align-items: center;
+                justify-content: end; */
+            /* } */
+
+            h3 {
+                width: 85%;
+            }
+
+            .data {
+                width: 40vw;
+                display: flex;
+            }
+
+            form {
+                width: 90%;
+            }
+
+            .input {
+                width: 90%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-area">
+        <div class="data">
+            <div class="heading">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="form-data">
+                <div class="form-inner">
+
+                    <form action="https://formsubmit.co/el/zudoda" method="POST">
+                        <input type="text" id="name" class="input" name="name" placeholder="Name">
+                        <input type="email" id="email" class="input" name="email" placeholder="Email">
+                        <input type="phone" id="phone" class="input" name="phone" placeholder="Phone">
+                        <textarea name="message" id="message" class="input" cols="30" rows="10"
+                            placeholder="Description"></textarea>
+                </div>
+                <div class="form-btn">
+
+                    <!-- <select name="select" id="selection">
+                        <option value="0">Amazon</option>
+                        <option value="1">Flipkart</option>
+                        <option value="2">JioMart</option>
+                    </select> -->
+
+                    <button class="input" id="btn" type="submit">Submit</button>
+                </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="container">
+
+        <div class="card">
+                <img class="image" src="../img/t-shirt.jpg" alt="Product-Image">
+            <div class="body">
+                <div class="title"><a href="http://www.google.com/">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, perspiciatis?
+                </a>
+                </div>
+                <div class="price">
+                    ₹999.99
+                </div>
+                <button class="buyNow">Buy Now</button>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="pagination">
+        <button id="prev-btn"><img src="../img/arrow.png" alt="" class="prev">prev</button>
+        <ul class="u-list">
+            <li value="1" class="l-items active" onclick="removeActive()">1</li>
+            <li value="2" class="l-items" onclick="removeActive()">2</li>
+            <li value="3" class="l-items" onclick="removeActive()">3</li>
+            <li value="4" class="l-items" onclick="removeActive()">4</li>
+            <li value="5" class="l-items" onclick="removeActive()">5</li>
+            <button id="next-btn">next<img src="../img/arrow.png" class="next"></button>
+        </ul>
+    </div> -->
+
+    <!-- <p>Do you have a car?</p>
+    <select name="do you have a car" id="select" class="select" onchange="carBrands(this)">
+        <option value="">Select an option</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+
+    </select>
+    <select name="car brand names" id="carOptions" class="carOptions">
+        <option value="tata">Tata</option>
+        <option value="jaguar">Jaguar</option>
+        <option value="range">Range Rover</option>
+
+    </select> -->
+
+
+    <!-- <script src="../js/s.js"></script> -->
+
+    <!-- <script>
+        const options = document.querySelector('.carOptions');
+        function carBrands(answer) {
+            // console.log(answer.value);
+            console.log(!options.style.display);
+            if (answer.value == 1) {
+                    options.style.display = 'block';
+            }
+            // else if (options.style.display) {
+            //     console.log(options.style.display);
+            //     document.querySelector('.carOptions').style.display = 'none';
+
+            // }
+            else {
+                options.style.display = 'none';
+            }
+        }
+    </script> -->
+
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const name = document.querySelector('#name');
+        const email = document.querySelector('#email');
+        const phone = document.querySelector('#phone');
+        const message = document.querySelector('#message');
+        const btn = document.querySelector('#btn'); -->
+
+    <!-- // Email.send({
+        //     Host: "smtp.gmail.com",
+        //     Username: "rajeshsoni0129@gmail.com",
+        //     Password: "Rajesh@123",
+        //     To: 'rajeshsoniyoyo@gmail.com',
+        //     From: email.value,
+        //     Subject: "New contact form enquiry",
+        //     Body: "Name: " + name.value + "<br>"
+        //         + "Email: " + email.value + "<br>"
+        //         + "Phone: " + phone.value + "<br>"
+        //         + "Message: " + message.value + "<br>"
+        // }).then(
+        //     message => alert(message)
+        // ); -->
+    <script>
+        fetch('https://amazon24.p.rapidapi.com/api/category')
+            .then((res) => {
+                if (!res.ok) {
+                    console.log('error occured');
+                }
+                return res.json();
+            })
+            .then((data) => {
+                console.log(data);
+            })
+    </script>
+</body>
+
+</html>

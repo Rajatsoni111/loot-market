@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LootMarket-Amazon Products</title>
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap&family=Lato"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/sty.css">
+    <!-- <link rel="stylesheet" href="../css/sty.css"> -->
+</head>
+
+<body>
+
+    <!-- NavBar  -->
+    <nav class="nav-bar">
+        <div class="logo-search">
+            <a href="index.html" class="icon">
+                <h2 class="title-logo">LootDeals</h2>
+            </a>
+
+            <form action="" class="search"> 
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-btn"><img src="../img/search.svg" alt=""></button>
+                
+            </form>
+
+            <!-- <div class="search">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-btn"><img src="../img/search.svg" alt=""></button>
+            </div> -->
+        </div>
+
+        <div class="nav-collapse">
+            <ul class="nav-ul">
+
+                <li class="nav-li">
+                    <a href="index.html" class="nav-links">
+                        <img src="../img/house.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="nav-li">
+                    <a href="index.html" class="nav-links">
+                        <img src="../img/lightning-charge.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="nav-li">
+                    <div class="dropdown-sys">
+                        <button class="drop-btn1" onclick="dropdownShower();">
+                            <img src="../img/shop-window.svg" alt="shops">
+                            <img src="../img/caret-down.svg" alt="dropdown-indicator" class="down-arrow">
+                        </button>
+
+
+                        <div class="drop-content first">
+                            <a href="./amazon.html" class="li">Amazon</a>
+                            <a href="./flipkart.html" class="li">Flipkart</a>
+                            <a href="./jioMart.html" class="li">JioMart</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-li">
+                    <div class="dropdown-sys">
+
+                        <button class="drop-btn2" onclick="dropdownShower();">
+                            <img src="../img/tag.svg" alt="sales">
+                            <img src="../img/caret-down.svg" alt="dropdown-indicator" class="down-arrow">
+                        </button>
+
+                        <div class="drop-content second">
+                            <a href="#" class="li">Amazon Great Indian Festival</a>
+                            <a href="#" class="li">Flipkart Big Billion Days</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <button class="toggler">
+            <img src="../img/list.svg" alt="toggle-navbar">
+        </button>
+
+    </nav>
+    <!-- NavBar ending -->
+
+    <section class="data-section">
+
+        <!-- Go to top Button -->
+        <a href="" class="to-top" id="to-top">
+            <img src="../img/caret-down.svg" alt="up">
+            <!-- <i class="fas fa-chevron-up"></i> -->
+        </a>
+
+
+        <!-- Heading -->
+        <!-- <div> -->
+        <h3 class="heading">
+            <img src="../img/tag-fill.svg" alt="" class="tag">
+            <!-- <i class="fa-solid fa-tag"></i> -->
+            Amazon Deals:
+        </h3>
+
+
+        <!-- DropDown  -->
+        <span class="select-dropdown">
+
+            <select name="select-category" id="select" onchange="sorter();">
+                <!-- <option value="">Categories:</option> -->
+                <option value="a">See All</option>
+                <option value="e">Electronics</option>
+                <option value="j">Jewellery</option>
+                <option value="m">Men's Clothing</option>
+                <option value="w">Women's Clothing</option>
+            </select>
+
+        </span>
+
+
+        <div class="bar">
+        </div>
+        <!-- </div> -->
+
+        <!-- Cards Starting -->
+        <div class="container-fluid data-container">
+            <div class="no-results">
+                <h1 class="no-heading">
+
+                </h1>
+            </div>
+            <div class="row row-col-sm-6 row-col-md-4 row-col-lg-2.4 row-col-xl-2.4 row-col-xxl-2 row-of-data">
+                <!-- data here -->
+
+            </div>
+        </div>
+
+
+        <button class="load-more">Load More</button>
+
+        <!-- 
+        <!-- For the pagination segment
+        <div class="pagination">
+            <button id="prev-btn"><img src="../img/arrow.png" alt="" class="prev">prev</button>
+            <ul class="list">
+                <li value="1" class="l-items active" onclick="removeActive()">1</li>
+                <li value="2" class="l-items" onclick="removeActive()">2</li>
+                <li value="3" class="l-items" onclick="removeActive()">3</li>
+                <li value="4" class="l-items" onclick="removeActive()">4</li>
+                <li value="5" class="l-items" onclick="removeActive()">5</li>
+            </ul>
+            <button id="next-btn">next<img src="../img/arrow.png" class="next"></button>
+        </div> -->
+
+    </section>
+
+
+
+    <!-- Bottom section -->
+    <div class="bottom-info">
+        <h2 class="bottom-text">
+            One of the Finest <span class="red">Loot Deals,Coupons & Free Recharge Offers</span> Website in India
+        </h2>
+
+        <h5 class="bottom-text">
+            IndiaDesire.com: Online Shopping Offers, Free Recharge Coupons, Loot Deals, Amazon Offers, Flipkart
+            Offers & Paytm Offers
+        </h5>
+
+        <p class="bottom-para bottom-text">
+            We at IndiaDesire.com have been working hard since 9 years to provide you with best Shopping Experience
+            with an aggregated offering that helps you find great deals while also saving big bucks!
+        </p>
+
+
+        <div class="blue-back">
+            We do not sell any products, We only provide offers and deals of all stores at a single place
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div class="container text-center bottom-nav">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+            <div class="col bottom-nav-col">
+                <!-- <h2 class="brand">LootDeals</h2> -->
+                <a href="./index.html">
+                    <!-- <h2 class="brand">LootDeals</h2> -->
+                    <img src="../img/loot-deals-logo.png" alt="loot-deals-logo" class="bottom-logo">
+                </a>
+            </div>
+
+            <div class="col bottom-nav-col">
+                <h5 class="bottom-h">COMPANY</h5>
+                <ul class="list-unstyled-mb-4 u-list">
+                    <li><a href="./aboutUs.html" class="bottom-a">About Us</a>
+                    </li>
+                    <li>Our Team</li>
+                    <!-- <li>Price Tracker</li> -->
+                    <!-- <li>Best Products</li> -->
+                </ul>
+            </div>
+
+            <div class="col bottom-nav-col">
+                <h5 class="bottom-h">NEED HELP</h5>
+                <ul class="list-unstyled-mb-4 u-list">
+                    <li><a href="./FAQs.html" class="bottom-a">FAQs</a></li>
+                    <li><a href="./contactUs.html" class="bottom-a">Contact Us</a></li>
+                    <!-- <li>Unsubscribe</li> -->
+                </ul>
+            </div>
+            <div class="col bottom-nav-col">
+                <h5 class="bottom-h">PRIVACY & YOU</h5>
+                <ul class="list-unstyled-mb-4 u-list">
+                    <li><a href="./privacyPolicy.html" class="bottom-a">Privacy Policy</a></li>
+                    <li><a href="./termsofUse.html" class="bottom-a">Terms of Use</a></li>
+                    <!-- <li>Terms of Use</li> -->
+                    <li><a href="./securityTips.html" class="bottom-a">Security Tips</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p class="f-p">© Copyright 2023 Loot Deals</p>
+    </div>
+
+    <!-- <hr> -->
+
+    <!-- <div class="links">
+            <strong>Flash Sale: </strong>
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>|
+            <a href="">Some link</a>
+
+        </div> -->
+
+
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/script3.js"></script>
+</body>
+
+</html>
